@@ -1,0 +1,198 @@
+#paint{
+    width: 350px;
+}
+.Slide{
+  background-image: url("./exotic\ 4.jpg");
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+} 
+.Slide .contents h5 {
+   font-size: 2rem;
+   padding-left: 30px;
+}
+.Slide .contents h2{
+    font-size: 3.5rem;
+    padding-left: 30px;
+}
+.contents button{
+    width: 10rem;
+    padding: 15px 23px;
+    position: absolute;
+    font-size: 1rem;
+    border: 2px solid gold;
+    font-weight: 300;
+    left: 50px;
+}
+.contents button a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+.sec-part{
+    background-color: rgb(226, 226, 204);
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 100;
+    padding: 100px 70px;
+    height: 12rem;
+}
+.secSec{
+    font-size: 1.7rem;
+}
+.opor{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.sec-part .opor button{
+    width: 22%;
+    padding: 20px 20px;
+    border: 2px solid rgba(255, 217, 0, 0.432);
+    font-size: 1rem;
+}
+.sec-part .opor button:hover{
+    transition: 0.5s all ease-in-out;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+}
+.painter{
+    display: flex;
+    justify-content: space-evenly;
+}
+.painter img{
+    width: 380px;
+    height: 400px;
+}
+.head h1{
+    text-align: center;
+}
+.proj{
+    width: 100%;
+    background-color: gold;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.proj button{
+    padding: 15px 25px;
+    font-size: 1.3rem;
+    color: black;
+}
+.proj button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in;
+    font-size: 15px;
+}
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-media a{
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 3rem;
+}
+.social-media #face{
+    color: blue;
+}
+.social-media #whatsapp{
+    color: green;
+}
+.social-media #instagram{
+    color: #E4405F;
+}
+/* THIS THE SWIPER SLIDER CSS */
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  } 
+  .swiper {
+    width: 60vw;
+    height: 50vh;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .swiper-slide p{
+    width: 60%;
+    font-size: 1.3rem;
+  } 
+  
+/* ENDING OF SWIPER SLIDER */
+
+/* Large screens ----------- */
+@media (max-width: 600px) {
+    .Slide .contents h2{
+        font-size: 1.7rem;
+    }
+    .paintings img{
+        height: 30rem;
+    }
+    .painter{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-part .opor button{
+        width: 10rem;
+        padding: 1.4rem 1.2rem;
+        font-size: 1.2rem;
+    }
+    .sec-part{
+        flex-direction: column;
+        height: 30rem;
+        padding: 15px 10px;
+    }
+}
+/* @media (min-width: 601px) and (max-width: 1024px) { */
+    /* TABLET SCREEN */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .sec-part{
+            height: 15rem;
+        }
+    .painter img{
+        height: 40rem;
+        width: 70%;
+    }
+    .painter{
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-part .opor button{
+        width: 10rem;
+        padding: 1.6rem 1.4rem;
+    }
+}
+
